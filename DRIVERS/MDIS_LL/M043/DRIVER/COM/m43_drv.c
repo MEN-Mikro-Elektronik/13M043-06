@@ -459,7 +459,7 @@ int32 M43_SetStat(
 	INT32_OR_64 value32_or_64 )
 {
 	int32			value	= (int32)value32_or_64;	/* 32bit value     */
-	INT32_OR_64		valueP  = value32_or_64;		/* stores 32/64bit pointer */
+	/* INT32_OR_64		valueP  = value32_or_64;		/\* stores 32/64bit pointer *\/ */
 
     M43_HANDLE*		m43Hdl = (M43_HANDLE*) llHdl;
 
