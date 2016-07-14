@@ -48,6 +48,7 @@
 static char *RCSid="$Id: m43_ex1.c,v 1.7 2013/07/11 14:32:36 gv Exp $";
 
 #include <stdio.h>
+#include <string.h>
 #include <MEN/men_typs.h>
 #include <MEN/usr_oss.h>
 #include <MEN/mdis_api.h>
