@@ -11,28 +11,23 @@
  *     Switches:  _ONE_NAMESPACE_PER_DRIVER_
  *				  _LL_DRV_
  *
- *-------------------------------[ History ]---------------------------------
- *
- * $Log: m43_drv.h,v $
- * Revision 1.4  2013/07/11 14:32:42  gv
- * R: Porting to MDIS5
- * M: Changed according to MDIS Porting Guide 0.9
- *
- * Revision 1.3  2004/04/07 15:08:37  cs
- * cosmetics for MDIS4/2004 conformity
- *   removed global prototypes
- *   (changed to static and moved to m43_drv.c)
- *
- * Revision 1.2  2001/08/16 10:09:07  kp
- * support swapped access variant
- *
- * Revision 1.1  1998/03/09 09:38:56  Schmidt
- * Added by mcvs
- *
- *
  *---------------------------------------------------------------------------
  * (c) Copyright 1998 by MEN mikro elektronik GmbH, Nuernberg, Germany
  ****************************************************************************/
+/*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 2 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 
 #ifndef _M43_LL_H_
 #define _M43_LL_H_

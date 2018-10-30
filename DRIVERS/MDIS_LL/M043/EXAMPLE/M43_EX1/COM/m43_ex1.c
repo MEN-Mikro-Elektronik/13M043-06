@@ -13,37 +13,23 @@
  *     Required: -
  *     Switches: NO_MAIN_FUNC
  *
- *-------------------------------[ History ]---------------------------------
- *
- * $Log: m43_ex1.c,v $
- * Revision 1.7  2013/07/11 14:32:36  gv
- * R: Porting to MDIS5
- * M: Changed according to MDIS Porting Guide 0.9
- *
- * Revision 1.6  2004/04/07 15:08:35  cs
- * cosmetics for MDIS4/2004 conformity
- *   changed prototype M43_Ex1 to static
- *
- * Revision 1.5  2001/01/19 14:51:07  kp
- * removed obsolete NO_MAIN_FUNC
- *
- * Revision 1.4  1998/07/27 11:50:00  see
- * flush stdout after printing without newline
- * made execution faster (delay changed from 500 to 200)
- *
- * Revision 1.3  1998/07/16 16:03:20  Schmidt
- * VxWorks defines removed, support for variable device names implemented,
- * cosmetics to new style
- *
- * Revision 1.2  1998/03/11 09:23:21  Schmidt
- * adapt to VXWORKS
- *
- * Revision 1.1  1998/03/09 09:38:52  Schmidt
- * Added by mcvs
- *
  *---------------------------------------------------------------------------
  * (c) Copyright 1998 by MEN mikro elektronik GmbH, Nuernberg, Germany
  ****************************************************************************/
+/*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 2 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 
 static char *RCSid="$Id: m43_ex1.c,v 1.7 2013/07/11 14:32:36 gv Exp $";
 

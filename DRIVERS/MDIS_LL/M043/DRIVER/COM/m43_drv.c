@@ -12,64 +12,23 @@
  *     Required:  -
  *     Switches:  _ONE_NAMESPACE_PER_DRIVER_
  *
- *-------------------------------[ History ]---------------------------------
- *
- * $Log: m43_drv.c,v $
- * Revision 1.11  2013/07/11 14:32:34  gv
- * R: Porting to MDIS5
- * M: Changed according to MDIS Porting Guide 0.9
- *
- * Revision 1.10  2004/04/08 13:05:46  cs
- * additions for MDIS4/2004 conformity
- *   changed M43_Info addrSize
- *   added   M43_Info lockmode processing
- *
- * Revision 1.9  2004/04/07 15:08:19  cs
- * cosmetics to reach MDIS4/2004 conformity
- *   added static prototypes
- *
- * Revision 1.8  2001/08/16 10:09:05  kp
- * M43_GetEntry renamed now in m43_drv.h according to variant
- *
- * Revision 1.7  1998/08/03 16:34:28  Schmidt
- * idFuncTbl is now located in LL_HANDLE
- * idFuncTbl is now initialized in Init
- * IdFuncTbl() removed
- * error messages are now with prefix LL
- *
- * Revision 1.6  1998/07/27 11:49:21  see
- * wrong static const char *IdentString type changed
- * M43_Init: ID_CHECK default is now 1
- * M43_Init: error message was wrong
- * M43_Getstat: M_LL_ID_SIZE returned wrong size=32
- * M43_Getstat: M_LL_BLK_ID_DATA changed (template style)
- * LL_HANDLE: unused irqHdl removed
- * LL_HANDLE: base renamed to ma (template style)
- * some defs renamed  (template style)
- * some defs added (template style)
- *
- * Revision 1.5  1998/07/20 09:22:26  Schmidt
- * DBGEXIT added
- *
- * Revision 1.4  1998/07/17 12:12:16  Franke
- * cosmetics
- *
- * Revision 1.3  1998/07/16 16:03:03  Schmidt
- * update to MDIS 4.1, new function IdFuncTbl(),
- * Set/Getstat: M_BUF_WR_MODE removed / M_LL_CH_DIR is M_CH_INOUT
- *
- * Revision 1.2  1998/03/13 17:09:47  Schmidt
- * repair ident string
- * remove permanent debug infos
- * use MD16 instead of MD08
- * remove #include <stdarg.h>
- *
- * Revision 1.1  1998/03/09 09:38:39  Schmidt
- * Added by mcvs
- *
  *---------------------------------------------------------------------------
  * (c) Copyright 1998 by MEN mikro elektronik GmbH, Nuernberg, Germany
  ****************************************************************************/
+/*
+* This program is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 2 of the License, or
+* (at your option) any later version.
+*
+* This program is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
 static const char IdentString[]="M43 - m43 low level driver: $Id: m43_drv.c,v 1.11 2013/07/11 14:32:34 gv Exp $";
 
 #include <MEN/men_typs.h>   /* system dependend definitions   */
