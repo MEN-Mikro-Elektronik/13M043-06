@@ -1,8 +1,6 @@
 #**************************  M a k e f i l e ********************************
 #  
 #         Author: ds
-#          $Date: 2004/04/07 15:08:33 $
-#      $Revision: 1.3 $
 #  
 #    Description: Makefile definitions for the m43_ex1 example program
 #                      
@@ -23,6 +21,11 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 MAK_NAME=m43_ex1
+# the next line is updated during the MDIS installation
+STAMPED_REVISION="13M043-06_02_15-1-g8ca4edb-dirty_2019-05-10"
+
+DEF_REVISION=MAK_REVISION=$(STAMPED_REVISION)
+MAK_SWITCH=$(SW_PREFIX)$(DEF_REVISION)
 
 MAK_LIBS=$(LIB_PREFIX)$(MEN_LIB_DIR)/mdis_api$(LIB_SUFFIX) \
          $(LIB_PREFIX)$(MEN_LIB_DIR)/usr_oss$(LIB_SUFFIX)

@@ -3,8 +3,6 @@
  *         Name: m43_ll.h
  *
  *       Author: ds
- *        $Date: 2013/07/11 14:32:42 $
- *    $Revision: 1.4 $
  *
  *  Description: M43 specific set-/getstat codes and LL prototypes
  *

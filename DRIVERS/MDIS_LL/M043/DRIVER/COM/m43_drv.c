@@ -1,11 +1,9 @@
 /*********************  P r o g r a m  -  M o d u l e ***********************
  *
  *         Name: m43_drv.c
- *      Project: M43 module driver (MDIS V4.x)
+ *      Project: M43 module driver 
  *
  *       Author: ds
- *        $Date: 2013/07/11 14:32:34 $
- *    $Revision: 1.11 $
  *
  *  Description: Low level driver for M43 modules
  *
@@ -29,7 +27,6 @@
 * You should have received a copy of the GNU General Public License
 * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
-static const char IdentString[]="M43 - m43 low level driver: $Id: m43_drv.c,v 1.11 2013/07/11 14:32:34 gv Exp $";
 
 #include <MEN/men_typs.h>   /* system dependend definitions   */
 #include <MEN/maccess.h>    /* hw access macros and types     */
@@ -79,6 +76,8 @@ typedef struct
 /* include files which need LL_HANDLE */
 #include <MEN/ll_entry.h>		/* low level driver jumptable  */
 #include <MEN/m43_drv.h>		/* M43 driver header file */
+
+static const char IdentString[]=MENT_XSTR(MAK_REVISION);
 
 /*-----------------------------------------+
 |  PROTOTYPES                              |

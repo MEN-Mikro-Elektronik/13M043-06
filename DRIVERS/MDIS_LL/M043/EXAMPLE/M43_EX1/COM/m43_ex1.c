@@ -5,8 +5,6 @@
  ****************************************************************************
  *
  *       Author: ds
- *        $Date: 2013/07/11 14:32:36 $
- *    $Revision: 1.7 $
  *
  *  Description: Simple example program for the M43 MDIS driver
  *
@@ -31,7 +29,6 @@
 * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-static char *RCSid="$Id: m43_ex1.c,v 1.7 2013/07/11 14:32:36 gv Exp $";
 
 #include <stdio.h>
 #include <string.h>
@@ -39,6 +36,8 @@ static char *RCSid="$Id: m43_ex1.c,v 1.7 2013/07/11 14:32:36 gv Exp $";
 #include <MEN/usr_oss.h>
 #include <MEN/mdis_api.h>
 #include <MEN/mdis_err.h>
+
+static const char IdentString[]=MENT_XSTR(MAK_REVISION);
 
 /*-----------------------------------------+
 |  PROTOTYPES                              |
@@ -102,7 +101,7 @@ int M43_Ex1( char *devName )
 	printf("m43_simp - simple example program for the M43 module\n");
     printf("====================================================\n\n");
 
-    printf("%s\n\n", RCSid);
+    printf("%s\n\n", IdentString);
 
     /*----------------------+
     | open the device       |
