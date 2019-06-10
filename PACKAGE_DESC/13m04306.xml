@@ -3,8 +3,8 @@
 <package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="packagedesc.xsd">
 	<name>13m04306</name>
 	<description>MDIS5 driver package for MEN M43 M-Module</description>
-	<date>2016-07-14</date>
-	<revision>2.14</revision>
+	<date>2019-06-07</date>
+	<revision>13M043-06_02_15-3-g37853ea</revision>
 	<docroot>DRIVERS/MDIS_LL/M043/DOC/m43_drv.html</docroot>
 	<modellist>
 		<model>
